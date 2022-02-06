@@ -1,0 +1,55 @@
+html {
+    font-family: Verdana, "Trebuchet MS", sans-serif; 
+    font-size: 16px;
+    color: #162722;
+  }
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2 + p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #F9B74E
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #507255;
+}
+
+a:visited {
+  color: #507255;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #D1EBC1;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #D1EBC1;
+}
+
+a:active {
+  background: #D1EBC1;
+  color: #507255;
+}
+
+.posters {
+width: 35%;
+height: auto;
+}
