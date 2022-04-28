@@ -1,19 +1,21 @@
-.nav-pills .nav-link {
-    background-color: peachpuff;
-    color: rgb(56, 68, 56);
-}
-
-.nav-pills .nav-link.active {
-    background-color: lightcoral;
-    color: black;
-}
-
 body {
     background-repeat: no-repeat;
 }
 
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 8vh;
+    z-index: 99999999999999;
+}
+
 .navbar-light {
     background-color: rgb(56, 68, 56);
+}
+
+.navbar-toggler {
+    margin: auto;
 }
 
 .nav.nav-pills {
@@ -21,19 +23,75 @@ body {
     justify-content: space-evenly;
 }
 
+.nav-pills .nav-link {
+    background-color: peachpuff;
+    color: rgb(56, 68, 56);
+    font-size: 1.2em;
+}
+
+.nav-pills .nav-link.active {
+    background-color: lightcoral;
+    color: black;
+}
+
 .nav-pills .nav-item {
-    padding-right: 5%;
-    padding-left: 5%;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: max-content;
+}
+
+.nav-pills .nav-item:hover {
+    top: 2px;
 }
 
 .header {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    max-width: max-content;
+    width: 100%;
+    height: 92vh;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FLiSEiMS.jpg&f=1&nofb=1");
+    background: -moz-linear-gradient(318deg, rgba(119,140,148,0.7931547619047619) 0%, rgba(117,117,117,0.7175245098039216) 42%, rgba(240,90,90,0.7903536414565826) 100%), url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FLiSEiMS.jpg&f=1&nofb=1");
+    background: -webkit-linear-gradient(318deg, rgba(119,140,148,0.7931547619047619) 0%, rgba(117,117,117,0.7175245098039216) 42%, rgba(240,90,90,0.7903536414565826) 100%),url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FLiSEiMS.jpg&f=1&nofb=1");
+    background: linear-gradient(318deg, rgba(119,140,148,0.7931547619047619) 0%, rgba(117,117,117,0.7175245098039216) 42%, rgba(240,90,90,0.7903536414565826) 100%),url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FLiSEiMS.jpg&f=1&nofb=1");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-link {
-    font-size: 1.2em;
+.header h1 {
+    color: aliceblue;
+    margin-bottom: 1em;
+    padding-bottom: 5px;
+    font-weight: 450;
+    width: content;
+    font-size: 1.3em;
+}
+
+.header .first {
+    border-bottom: solid 2px aliceblue;
+    margin-bottom: 5%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+}
+
+.aboutme .image {
+    margin-right: 5em;
+}
+
+.aboutme .description {
+    text-align: center;
+    padding-right: 2em;
 }
 
 .btn.btn-primary {
@@ -57,23 +115,225 @@ body {
 }
 
 .carousel-item .carousel-caption {
-    background: rgba(127, 127, 127, 0.8);
-    position: absolute;
-    top: 10%;
-    left: 12.5%;
-    width: 75%;
-    height: 80%;
-    border-radius: 5%;
+    background: rgba(127, 127, 127, 0.9);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-item .carousel-caption h3 {
-    margin-top: 2.4em;
-    font-size: 1.8em;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .carousel-item .carousel-caption p {
-    margin-top: 1.7em;
+    font-size: 1.4em;
+    width: 65%;
+    margin: auto;
+    margin-top: 2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.tools {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.tools h2 {
+    margin: auto;
+    width: max-content;
+    margin-bottom: 1em;
+}
+
+.tools .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tools .card a {
+    position: relative;
+    bottom: 0.1em;
+}
+
+.facts {
+    margin-top: 15vh;
+    text-align: center;
+    width: 100%;
+}
+
+.facts h2 {
+    margin-bottom: 5vh;
+}
+
+.facts p {
     font-size: 1.2em;
-    margin-left: 0.8em;
-    margin-right: 0.8em;
+    margin-bottom: 3vh;
+}
+
+.facts button {
+    position: relative;
+}
+
+.facts button:active {
+    top: 2px;
+}
+
+.facts #fact-location {
+    width: 60%;
+    min-height: 5vh;
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+    background-color: rgba(127, 127, 127, 0.2);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts #fact-location p {
+   margin: 0;
+}
+
+.projects {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.6em;
+    margin-bottom: 5vh;
+}
+
+.projects .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}
+
+.projects .cards .card .card-img-top {
+    object-fit: cover;
+    object-position: top;
+    max-height: 40vh;
+}
+
+.contact {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    font-size: 2.6em;
+    margin-bottom: 4vh;
+}
+
+.contact .links {
+    margin-top: 4vh;
+    width: 45%;
+}
+
+.contact .links .list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact .links .list-group-item img {
+    max-width: 10vw;
+}
+
+.contact .links .list-group-item a {
+    position: absolute;
+    right: 0;
+    font-size: 1.6em;
+}
+
+.contact .links .list-group-item a:hover {
+    background-color: lightcoral;
+}
+
+@media only screen and (max-width: 990px) {
+    .nav.nav-pills {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .nav-pills .nav-item {
+        padding-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header h1 {
+        font-size: 1.15em;
+    }
+    .carousel-item .carousel-caption h3 {
+        font-size: 1.3em;
+    }
+    .carousel-item .carousel-caption p {
+        font-size: 1em;
+    }
+    .projects .cards {
+        flex-direction: column;
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .cards .card {
+        margin-bottom: 7vh;
+    }
+    .contact .links {
+        width: 60%;
+    }
+    .contact .links .list-group-item a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header h1 {
+        font-size: 0.9em;
+    }
+    .header .first {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+    .aboutme .description {
+        font-size: 0.9em;
+    }
+
+    .carousel-item .carousel-caption h3 {
+        font-size: 1.2em;
+    }
+    .carousel-item .carousel-caption p {
+        font-size: 0.9em;
+    }
+    .tools .cards {
+        flex-direction: column;
+    }
+    .tools .cards .card {
+        margin: auto;
+        margin-top: 4vh;
+    }
+    .contact h2 {
+        font-size: 1.6em;
+    }
+    .contact p {
+        font-size: 0.8em;
+    }
+    .contact .links .list-group-item a {
+        font-size: 0.8em;
+    }
 }
