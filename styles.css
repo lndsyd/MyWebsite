@@ -74,11 +74,6 @@ body {
     padding-right: 1em;
 }
 
-.image img {
-    width: 40%;
-    height: auto;
-}
-
 .aboutme {
     display: flex;
     flex-direction: row;
@@ -91,8 +86,18 @@ body {
 }
 
 .aboutme .image {
-    margin-right: 5em;
+    margin-right: -3em;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.aboutme .image img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 5em;
+}   
 
 .aboutme .description {
     text-align: center;
@@ -242,7 +247,7 @@ body {
     margin-bottom: 4vh;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1200px) {
     .nav.nav-pills {
         display: flex;
         flex-direction: column;
